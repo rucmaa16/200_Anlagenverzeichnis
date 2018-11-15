@@ -28,24 +28,12 @@ public class AvCellRenderer  implements TableCellRenderer{
                 label.setText(a.getBezeichnung());
                 break;
             case AK:
-                label.setText(Double.parseDouble(a.getAK()));
+                label.setText(String.valueOf(a.getAK()));
                 break;
             case ND:
-                label.setText(Double.parseDouble(a.getND()));
+                label.setText(String.valueOf(a.getND()));
                 break;
-            case BISHND:
-                label.setText(Double.parseDouble(a.getBish_ND()));
-                break;
-            case AFABISHER:
-                label.setText(Double.parseDouble(a.getAfa_bisher()));
-                break;
-            case ND:
-                label.setText(Double.parseDouble(a.getND()));
-                break;
-             case ND:
-                label.setText(Double.parseDouble(a.getND()));
-                break;
-           
+            
         }
 
         return label;
