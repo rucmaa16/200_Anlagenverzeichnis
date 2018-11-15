@@ -1,6 +1,7 @@
 package model;
 
 import data.AvBL;
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,10 +22,24 @@ public class AvModel extends AbstractTableModel {
     @Override
     public int getRowCount() {
         return this.liste.size();
+=======
+import javax.swing.table.AbstractTableModel;
+
+/**
+ *
+ * @author Rucki
+ */
+public class AvModel extends AbstractTableModel {
+
+    @Override
+    public int getRowCount() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+>>>>>>> origin/GUI
     }
 
     @Override
     public int getColumnCount() {
+<<<<<<< HEAD
         return AvEnum.values().length;
     }
 
@@ -89,4 +104,18 @@ public class AvModel extends AbstractTableModel {
             }
         }
     }
+=======
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Object getValueAt(int i, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    AvBL getRow(int row) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+>>>>>>> origin/GUI
 }
