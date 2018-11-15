@@ -11,10 +11,6 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 
-/**
- *
- * @author Rucki
- */
 public class AvModel extends AbstractTableModel {
 
     private List<AvBL> liste;
@@ -22,12 +18,10 @@ public class AvModel extends AbstractTableModel {
     public AvModel() {
         liste = new LinkedList<>();
     }
-    
-    
+
     @Override
     public int getRowCount() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-
+        return liste.size();
     }
 
     @Override
@@ -61,7 +55,7 @@ public class AvModel extends AbstractTableModel {
 //            case BW:
 //                return a.getBW_31_12();
             default:
-                return "?";
+                return "-";
         }
     }
 
@@ -79,23 +73,11 @@ public class AvModel extends AbstractTableModel {
 
     }
 
-    public void load(File f) throws IOException {
-        FileReader fr = null;
-        BufferedReader br = null;
-        try {
-            br = new BufferedReader(fr = new FileReader(f));
-            String line = br.readLine();
-            while ((line = br.readLine()) != null) {
-                AvBL a = new AvBL(line);
-                liste.add(a);
-            }
-        } catch (FileNotFoundException e) {
 
-        } finally {
-            if (br != null) {
-                br.close();
-            }
-        }
+
+    public void add(AvBL e) {
+        liste.add(e);
+        fireTableDataChanged();
     }
 
 }

@@ -28,11 +28,15 @@ public class AvCellRenderer  implements TableCellRenderer{
                 label.setText(a.getBezeichnung());
                 break;
             case AK:
-                label.setText(Double.parseDouble(a.getAK()));
+                label.setText(String.valueOf(a.getAK()));
                 break;
             case ND:
-                label.setText(Double.parseDouble(a.getND()));
+                label.setText(String.valueOf(a.getND()));
                 break;
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 4e75894918996b3a64ba3ea530d6ee92711e1e6b
         }
 
         return label;
