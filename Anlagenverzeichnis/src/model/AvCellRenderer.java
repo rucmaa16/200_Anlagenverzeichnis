@@ -33,19 +33,6 @@ public class AvCellRenderer  implements TableCellRenderer{
             case ND:
                 label.setText(Double.parseDouble(a.getND()));
                 break;
-            case BISHND:
-                label.setText(Double.parseDouble(a.getBish_ND()));
-                break;
-            case AFABISHER:
-                label.setText(Double.parseDouble(a.getAfa_bisher()));
-                break;
-            case ND:
-                label.setText(Double.parseDouble(a.getND()));
-                break;
-             case ND:
-                label.setText(Double.parseDouble(a.getND()));
-                break;
-           
         }
 
         return label;
