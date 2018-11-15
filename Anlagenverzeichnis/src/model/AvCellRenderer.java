@@ -33,10 +33,7 @@ public class AvCellRenderer  implements TableCellRenderer{
             case ND:
                 label.setText(String.valueOf(a.getND()));
                 break;
-<<<<<<< HEAD
-=======
-            
->>>>>>> 4e75894918996b3a64ba3ea530d6ee92711e1e6b
+
         }
 
         return label;
